@@ -11,8 +11,6 @@ import UserNotifications
 
 class ViewController: UIViewController {
     private var stackView: UIStackView!
-    var newsNotificationButton: UIButton!
-    var recipeNotificationButton: UIButton!
     var podcastNotificationButton: UIButton!
     private var podcastName: String?
 
@@ -76,4 +74,3 @@ class ViewController: UIViewController {
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
 }
-
