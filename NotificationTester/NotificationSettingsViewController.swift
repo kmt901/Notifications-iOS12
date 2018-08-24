@@ -14,6 +14,13 @@ class NotificationSettingsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let settingsLabel = UILabel(frame: CGRect.zero)
+        settingsLabel.text = "Notification Settings Page"
+        settingsLabel.font = UIFont.systemFont(ofSize: 30)
+        view.addSubview(settingsLabel)
+
+        settingsLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        settingsLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
     }
     
 

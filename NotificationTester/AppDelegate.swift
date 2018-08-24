@@ -62,7 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func userNotificationCenter(_ center: UNUserNotificationCenter, openSettingsFor notification: UNNotification?) {
         let navController = self.window?.rootViewController as! UINavigationController
         let notificationSettingsVC = NotificationSettingsViewController()
-        navController.popToViewController(notificationSettingsVC, animated: true)
+        navController.pushViewController(notificationSettingsVC, animated: true)
     }
 
 
