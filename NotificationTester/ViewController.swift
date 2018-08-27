@@ -59,10 +59,7 @@ class ViewController: UIViewController {
         guard let pathUrlForButtonHighlighted = Bundle.main.url(forResource: "heart-filled", withExtension: "png") else { return }
         let buttonHighlightStateImgAtt = try! UNNotificationAttachment(identifier: "button-highlight-image", url: pathUrlForButtonHighlighted, options: nil)
 
-        guard let pathUrlForMP3 = Bundle.main.url(forResource: "episode", withExtension: "mp3") else { return }
-        let audioAttachment = try! UNNotificationAttachment(identifier: "audio", url: pathUrlForMP3, options: nil)
-
-        content.attachments = [imgAttachment, buttonNormalStateImgAtt, buttonHighlightStateImgAtt, audioAttachment]
+        content.attachments = [imgAttachment, buttonNormalStateImgAtt, buttonHighlightStateImgAtt]
         sendNotification(with: content)
     }
 
